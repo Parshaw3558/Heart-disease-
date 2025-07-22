@@ -1,0 +1,49 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Failure Prediction</title>
+</head>
+<body>
+    <h2>Enter Patient Details</h2>
+    <form action="/predict" method="post">
+        <label>Age (years):</label>
+        <input type="number" name="age" step="any" required><br><br>
+
+        <label>Anaemia (1: Yes, 0: No):</label>
+        <input type="number" name="anaemia" step="1" min="0" max="1" required><br><br>
+
+        <label>CPK Level (mcg/L):</label>
+        <input type="number" name="creatinine_phosphokinase" step="any" required><br><br>
+
+        <label>Diabetes (1: Yes, 0: No):</label>
+        <input type="number" name="diabetes" step="1" min="0" max="1" required><br><br>
+
+        <label>Ejection Fraction (%):</label>
+        <input type="number" name="ejection_fraction" step="any" required><br><br>
+
+        <label>High Blood Pressure (1: Yes, 0: No):</label>
+        <input type="number" name="high_blood_pressure" step="1" min="0" max="1" required><br><br>
+
+        <label>Platelets (kiloplatelets/mL):</label>
+        <input type="number" name="platelets" step="any" required><br><br>
+
+        <label>Serum Creatinine (mg/dL):</label>
+        <input type="number" name="serum_creatinine" step="any" required><br><br>
+
+        <label>Serum Sodium (mEq/L):</label>
+        <input type="number" name="serum_sodium" step="any" required><br><br>
+
+        <label>Sex (1: Male, 0: Female):</label>
+        <input type="number" name="sex" step="1" min="0" max="1" required><br><br>
+
+        <label>Smoking (1: Smoker, 0: Non-Smoker):</label>
+        <input type="number" name="smoking" step="1" min="0" max="1" required><br><br>
+
+        <label>Follow-up Period (days):</label>
+        <input type="number" name="time" step="any" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
